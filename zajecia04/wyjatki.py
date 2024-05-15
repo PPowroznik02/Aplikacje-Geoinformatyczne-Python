@@ -22,7 +22,6 @@ class Kino:
                         if self.miejsca[key]["person"] == person:
                             raise RuntimeError("Person already booked a seat")
                 if self.miejsca[id]["status"] == "nonBooked":
-                    print("ooooooooo")
                     self.miejsca[id]["status"] = "booked"
                     self.miejsca[id]["person"] = person
                 else:
